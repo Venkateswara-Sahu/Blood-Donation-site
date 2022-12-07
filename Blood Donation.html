@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD DONATION APP</title>
+    <link rel="stylesheet" href="C:\VS Code\blood.css">
+</head>
+<body>
+    <nav class="fixed-nav-bar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#aboutUs">ABOUT US</a></li>
+            <li><a href="#personalDetails">DONORS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <!-- header section-->
+    <section id="home">
+        <section class="intro">
+        <p id="bit"><strong>Instead of giving blood to mosquitoes,<br>give it to someone <br>who needs it!!</strong></p>
+        <div class="centbutton">
+            <button id="donate" onclick="window.location.href='#personalDetails'">DONATE</button>
+        </div>
+    </section>
+   </section>
+
+   <!-- About Us section-->
+   <section id="aboutUs">
+        <h2>ABOUT US</h2>
+        <div class="aboutTopic">
+            <p id="rim">Global Blood Donation is an organisation that is geared to support hospitals and charitable organizations by connecting them to the donors 
+                and the respective companies when needed.</p>
+            <p id="rit">Individual volunteers are required to use this platform  to render their donation details that will narrow down the blood donors search 
+                during emergencies. This helps to reduce the number of deaths of the patients in various countries as result of saving 
+                a lot of lives.</p>
+            <p id="pit">The Global Blood Donation has registered with wide range of hospitals globally for volunteers to conduct their test freely and 
+                have their test results verified before any contact.</p>
+            <p id="mit">Our impact goes beyond moving money to where it's needed the most; it's also about putting communableseat of change 
+                and shifting power to transform the way aid and philanthropy work.</p>
+        </div>
+   </section>
+
+   <!-- personal details section-->
+   <section id="personalDetails">
+        <h2>DONOR DETAILS</h2>
+        <div class="hospitals">
+            <p><strong>Please register with the following verifieg hospitals with their corresponding ID's</strong></p>
+        <ol>
+            <li>
+                <em>The Nairobi Hospital's Doctors Plaza</em>
+            </li>
+            <li>
+                <em>The Nairobi West Hospital</em>
+            </li>
+            <li>
+                <em>MP Shah Hospital</em>
+            </li>
+        </ol>
+        </div>
+
+        <form id="form1">
+            <label for="Hospital ID"><b>HOSPITAL ID</b></label><br>
+            <input type="number" name="hospitalId"  max="3" id="hospitalId" placeholder="Apollo" required><br>
+
+            <label for="fullname"><b>FULL NAME</b></label><br>
+            <input type="text" name="fullname" id="fullname" placeholder="Venkateswara Sahu" required><br>
+
+            <p><b>BLOOD TYPE</b></p>
+            <div class="radios">
+                <div class="radio1">
+                    <input type="radio" id="typeOne" name="bloodtype" value="O Rh+" required>O Rh+<br>
+                    <input type="radio" id="typeTwo" name="bloodtype" value="A Rh+" required>A Rh+<br>
+                    <input type="radio" id="typeThree" name="bloodtype" value="B Rh+" required>B Rh+<br>
+                    <input type="radio" id="typeFour" name="bloodtype" value="AB Rh+" required>AB Rh+<br>
+                </div>
+                <div class="radio2">
+                    <input type="radio" id="typeFive" name="bloodtype" value="O Rh-" required>O Rh-<br>
+                    <input type="radio" id="typeSix" name="bloodtype" value="A Rh-" required>A Rh-<br>
+                    <input type="radio" id="typeSeven" name="bloodtype" value="B Rh-" required>B Rh-<br>
+                    <input type="radio" id="typeEight" name="bloodtype" value="AB Rh-" required>AB Rh-<br>
+                </div>
+            </div>
+        <p><b>GENDER</b></p>
+        <input type="radio" id="male" name="gender" value="male" required>Male<br>
+        <input type="radio" id="Female" name="gender" value="Female" required>Female<br>
+
+        <p><b>OCCUPATION</b></p>
+        <input type="text" name="occupation" id="occupation" placeholder="e.g. teacher" required><br>
+
+        <p><b>PHONE NUMBER</b></p>
+        <input type="number" name="phonenumber" id="phonenumber" placeholder="6301257489" required><br>
+
+        <p><b>EMAIL</b></p>
+        <input type="email" name="email" id="email" placeholder="sahu@gmail.com" required><br>
+
+        <p><b>DATE OF BIRTH</b></p>
+        <input type="date" name="date" id="date" required><br>
+
+        <p><b>ADDRESS</b></p>
+        <input type="text" name="address" id="address2" placeholder="phagwara 144111" required><br>
+
+        <p><b>WEIGHT</b></p>
+        <input type="text" name="weight" id="weight" placeholder="60kg" required><br>
+
+        <p><b>PULSE</b></p>
+        <input type="text" name="pulse" id="pulse" required><br>
+        
+        <p><b>DONATED PREVIOUSLY?</b></p>
+        <input type="radio" id="Yes" name="answer" value="Yes" required>Yes<br>
+        <input type="radio" id="No" name="answer" value="No">No<br>
+
+        <p><b>LAST TIME DONATION</b></p>
+        <input type="date" name="date2" id="date2" required><br>
+
+        <div class="subutton">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</section>
+<!-- contact us-->
+<section>
+    <section id="contact">
+        <div class="contact">
+            <h2 style="text-align: center; color: rgb(14,4,4);">CONTACT US</h2>
+            <div class="text-center">
+                <address id="contact">
+                  <strong>GLOBAL BLOOD DONATION</strong><br>
+                  Near LPU, JALANDHAR<br>
+                  PUNJAB  144111<br>
+                </address>
+                <address>
+                <p><strong>Email us on:</strong><br></p>
+                <p><a href="mailto:globalblood@gmail.com"><span class="emailtext">globalblood@gmail.com</span></a></p>
+                </address>
+               </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+</body>
+</html>
